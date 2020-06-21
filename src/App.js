@@ -4,6 +4,7 @@ import "./App.css";
 import { Home } from "./components/Home";
 import { Users } from "./components/Users";
 import { About } from "./components/About";
+import {Topics} from "./components/Topics";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             <li>
               <Link to="/about">About</Link>
             </li>
+            <li>
+              <Link to="/topics">Topics</Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -35,6 +39,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/topics">
+          <Topics />
         </Route>
       </Switch>
     </div>
